@@ -58,7 +58,9 @@ body {
 
 .hero {
     min-height: 100vh; display: flex; align-items: center; padding-top: 72px;
-    background: linear-gradient(180deg, var(--bg) 0%, #edeae3 100%);
+    background: linear-gradient(180deg, rgba(246, 243, 238, 0.88) 0%, rgba(237, 234, 227, 0.92) 100%),
+                url('img/hero-banner.jpg') center/cover no-repeat;
+    position: relative;
 }
 
 .hero-label {
@@ -81,9 +83,7 @@ body {
     line-height: 1.9; max-width: 520px;
 }
 
-.hero-divider {
-    width: 1px; height: 80px; background: var(--accent-warm); margin-top: 56px;
-}
+
 
 .places { padding: 100px 0 140px; }
 
