@@ -1,0 +1,9 @@
+:root {
+    --bg: #f6f3ee; --bg-card: #ffffff; --border: rgba(27, 67, 50, 0.1);
+    --text: #1a1a18; --text-muted: #6e6b63; --accent: #1b4332; --accent-warm: #c17f4e;
+    --font-display: 'Playfair Display', Georgia, serif; --font-body: 'Outfit', system-ui, sans-serif;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { font-family: var(--font-body); background-color: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
