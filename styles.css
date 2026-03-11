@@ -173,3 +173,25 @@ body {
 }
 
 .footer-link:hover { opacity: 1; }
+
+.reveal {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .place-card, .place-card.reverse { grid-template-columns: 1fr; gap: 32px; }
+    .place-card.reverse .place-img-wrapper { order: 0; }
+    .place-card.reverse .place-content { order: 0; }
+    .place-number { font-size: 3rem; top: -12px; }
+    .footer-inner { flex-direction: column; gap: 12px; }
+}
+
+@media (max-width: 480px) {
+    .nav { gap: 18px; }
+    .place-card { padding: 56px 0; }
+}
