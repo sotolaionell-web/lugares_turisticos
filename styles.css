@@ -16,3 +16,10 @@ body { font-family: var(--font-body); background-color: var(--bg); color: var(--
 .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1.5px; background: var(--accent-warm); transition: width 0.3s ease; }
 .nav-link:hover { color: var(--accent); }
 .nav-link:hover::after { width: 100%; }
+
+.hero { min-height: 100vh; display: flex; align-items: center; padding-top: 72px; background: linear-gradient(180deg, var(--bg) 0%, #edeae3 100%); }
+.hero-label { display: inline-block; font-size: 0.72rem; font-weight: 600; color: var(--bg); background: var(--accent); padding: 6px 16px; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 28px; }
+.hero-title { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 400; line-height: 1.05; margin-bottom: 32px; color: var(--text); }
+.hero-title span { display: block; font-style: italic; color: var(--accent-warm); }
+.hero-desc { font-size: 1.1rem; font-weight: 300; color: var(--text-muted); line-height: 1.9; max-width: 520px; }
+.hero-divider { width: 1px; height: 80px; background: var(--accent-warm); margin-top: 56px; }
